@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "464471102261",
+    "project_id": "b2023-gr2sw-davl",
+    "storage_bucket": "b2023-gr2sw-davl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464471102261:android:bc6b3e194901b3bd5c727c",
+        "android_client_info": {
+          "package_name": "com.example.b2023gr2sw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtkYxdwZY36k0xyFhkpdyWn3oHt75SWlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
