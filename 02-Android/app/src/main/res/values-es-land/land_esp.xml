@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="saludo">Hola en LandScapee</string>
+    <color name="text_color">#0080FF</color>
+    <color name="background">#999</color>
+</resources>
