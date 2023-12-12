@@ -1,6 +1,6 @@
 package com.example.b2023gr2sw
 
-import org.junit.Test
+import  org.junit.Test
 
 import org.junit.Assert.*
 
