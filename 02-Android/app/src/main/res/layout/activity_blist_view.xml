@@ -9,20 +9,23 @@
 
     <ListView
         android:id="@+id/lv_list_view"
-        android:layout_width="356dp"
-        android:layout_height="374dp"
+        android:layout_width="253dp"
+        android:layout_height="282dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574" />
 
     <Button
         android:id="@+id/btn_anadir_list_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="526dp"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="340dp"
         android:text="Anadir"
         app:layout_constraintEnd_toEndOf="@+id/lv_list_view"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="@+id/lv_list_view"
         app:layout_constraintTop_toTopOf="@+id/lv_list_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>

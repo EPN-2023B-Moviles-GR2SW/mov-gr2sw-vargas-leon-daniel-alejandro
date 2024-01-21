@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">B2023gr2sw</string>
     <string name="saludo">a</string>
+    <string-array name="string_array_opciones_dialogo">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+    </string-array>
+    <string name="title_activity_google_maps_inicio">GoogleMapsInicio</string>
 </resources>
