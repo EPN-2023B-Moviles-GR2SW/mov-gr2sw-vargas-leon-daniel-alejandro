@@ -1,3 +1,4 @@
+import java.io.Serializable
 
 class Libro (
     private val autor:String,
@@ -5,7 +6,7 @@ class Libro (
     private val disponibilidad:Boolean,
     private val edicion:Int,
     private val precio:Double
-){
+): Serializable{
 
     init {
         autor;
@@ -20,10 +21,22 @@ class Libro (
     fun getTitulo(): String {
         return titulo
     }
+    fun getEdicion(): Int {
+        return edicion
+    }
+    fun getDisponibilidad(): Boolean {
+        return disponibilidad
+    }
+    fun getPrecio():Double{
+        return precio
+    }
 
     override fun toString(): String {
-        return "Libro(autor='$autor', titulo='$titulo', disponibilidad=$disponibilidad, edicion=$edicion, precio=$precio)"
-    }
+       return "Autor: ${autor} \n " +
+               "Titulo: ${titulo}\n" +
+               "Edicion ${edicion}\n" +
+               "Precio: ${precio}$"
+        }
 
 
 

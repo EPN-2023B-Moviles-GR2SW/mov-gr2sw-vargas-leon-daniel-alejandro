@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    //Ir actividad simple
     fun irActividad(
         clase:Class<*>, actividad:String
     ){
@@ -52,6 +53,7 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("actividad", actividad)
         startActivity(intent)
     }
+    //Ir actividad con posicion
     fun irActividad(
         clase:Class<*>, actividad:String,posicion:Int
     ){
@@ -90,6 +92,10 @@ class MainActivity : AppCompatActivity() {
                 //Eliminamos el item seleccionaado y actualizamos la vista
                 arreglo.removeAt((posicionItemSeleccionado))
                 adaptador!!.notifyDataSetChanged()
+                return true
+            }
+            R.id.mi_ver_libros->{
+                irActividad(LibroView::class.java, "verLibros",posicionItemSeleccionado)
                 return true
             }
             else ->super.onContextItemSelected(item)

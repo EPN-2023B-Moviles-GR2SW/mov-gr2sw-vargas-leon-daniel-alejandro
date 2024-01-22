@@ -34,15 +34,6 @@ class BibliotecaManager : AppCompatActivity() {
         intent.putExtra("listaDeObjetos", (arreglo))
         startActivity(intent)
     }
-    fun mostrarSnackbar(texto:String){
-        Snackbar
-            .make(
-                findViewById(R.id.constrain_crear),
-                texto,
-                Snackbar.LENGTH_LONG
-            )
-            .show()
-    }
     //CRUD para biblioteca
     private fun crearBiblioteca(bibliotecas: ArrayList<Biblioteca>, botonCrear: Button){
         botonCrear
@@ -82,7 +73,7 @@ class BibliotecaManager : AppCompatActivity() {
                     val callePrincipal = findViewById<EditText>(R.id.in_callaPrincipal)
                     val calleSecundaria = findViewById<EditText>(R.id.in_calleSecundaria)
                     val estado = findViewById<CheckBox>(R.id.cb_disponible)
-                    val nuevaBiblioteca = Biblioteca(ArrayList(), nombre.text.toString(), callePrincipal.text.toString(), calleSecundaria.text.toString(), estado.isChecked)
+                    val nuevaBiblioteca = Biblioteca(arrayList[posicion].libros, nombre.text.toString(), callePrincipal.text.toString(), calleSecundaria.text.toString(), estado.isChecked)
                     arrayList[posicion] = nuevaBiblioteca
                     irActividad(MainActivity::class.java, ArrayList(arrayList))
                 }
