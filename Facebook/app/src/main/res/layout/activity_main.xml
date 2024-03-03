@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroud"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_Home"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardColor"
+            android:isScrollContainer="false"
+            android:paddingLeft="30dp"
+            android:textColor="@color/textColor"
+            android:textSize="13dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/house_solid"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconSize="25dp"
+            app:iconTint="#2B4EFF" />
+
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardColor"
+            android:isScrollContainer="false"
+            android:paddingLeft="30dp"
+            android:textColor="@color/textColor"
+            android:textSize="13dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/tv_solid"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconSize="25dp"
+            app:iconTint="#2B4EFF" />
+
+        <Button
+            android:id="@+id/btn_tienda"
+            android:isScrollContainer="false"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardColor"
+            android:paddingLeft="30dp"
+            android:textColor="@color/textColor"
+            android:textSize="13dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/store_solid"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconSize="25dp"
+            app:iconTint="#2B4EFF" />
+        <Button
+            android:id="@+id/btn_notificacion"
+            android:isScrollContainer="false"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardColor"
+            android:paddingLeft="30dp"
+            android:textColor="@color/textColor"
+            android:textSize="13dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/bell_solid"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconSize="25dp"
+            app:iconTint="#2B4EFF" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+     />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

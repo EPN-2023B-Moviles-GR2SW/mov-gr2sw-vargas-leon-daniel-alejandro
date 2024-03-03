@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:background="@color/cardColor"
+    android:backgroundTint="@color/cardColor"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/textColor"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imagen_usuario"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img_Feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_descripcion" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/id_reaccions">
+
+        <Button
+            android:id="@+id/btn_like"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardColor"
+            android:isScrollContainer="false"
+            android:paddingHorizontal="15dp"
+            android:text="Me Gusta"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="13dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/like"
+            app:iconPadding="0dp"
+            app:iconTint="@color/textColor" />
+
+        <Button
+            android:id="@+id/btn_comentar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardColor"
+            android:paddingHorizontal="15dp"
+            android:text="Comentar"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="13dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/comment_regular"
+            app:iconPadding="0dp"
+            app:iconTint="@color/textColor" />
+
+        <Button
+            android:id="@+id/btn_compartir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cardColor"
+            android:paddingHorizontal="15dp"
+            android:text="Compartir"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="13dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/share"
+            app:iconPadding="0dp"
+            app:iconTint="@color/textColor" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_reaccions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text=""
+        app:emojiCompatEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/id_descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/img_Feed" />
+
+    <TextView
+        android:id="@+id/id_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/textColor"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/id_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="TextView"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_descripcion"
+        app:layout_constraintEnd_toEndOf="@+id/id_descripcion"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toEndOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/fecha_feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/id_usuario"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/id_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/id_usuario" />
+
+    <TextView
+        android:id="@+id/tx_comentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toEndOf="@+id/id_reaccions"
+        app:layout_constraintTop_toBottomOf="@+id/img_Feed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

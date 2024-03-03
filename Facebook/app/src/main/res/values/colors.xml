@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="cardColor">#FEFEFE</color>
+    <color name="backgroud">#EFF1F4</color>
+    <color name="textColor">#050505</color>
+    <color name="notificacion">#2CA8B5FF</color>
+</resources>

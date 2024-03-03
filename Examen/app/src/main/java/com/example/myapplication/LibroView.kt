@@ -115,7 +115,8 @@ class LibroView : AppCompatActivity() {
         }
 
 
-    }    fun mostrarSnackbar(texto:String){
+    }
+    fun mostrarSnackbar(texto:String){
         val snack = Snackbar.make(findViewById(R.id.lv_libros), texto, Snackbar.LENGTH_LONG)
         snack.show()
     }
