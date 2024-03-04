@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 
 import android.widget.ListView
+import com.google.firebase.firestore.FirebaseFirestore
 
 import com.google.firebase.firestore.Query
 
@@ -40,7 +41,7 @@ class IFirestore : AppCompatActivity() {
 
         val botonDAtosPrueba = findViewById<Button>(R.id.btn_fs_datos_prueba)
         botonDAtosPrueba.setOnClickListener {
-            crearDatosPrueba()
+            crear()
         }
         val botonOrderBy = findViewById<Button>(R.id.btn_fs_order_by)
         botonOrderBy.setOnClickListener { consultarConOrden(adaptador) }
@@ -59,6 +60,15 @@ class IFirestore : AppCompatActivity() {
         botonFirebaseEmpezarPaginar.setOnClickListener {
             eliminarRegistro()
         }
+    }
+
+    private fun crear() {
+        val db = FirebaseFirestore.getInstance()
+        db.collection("user").add(
+            hashMapOf(
+                "nombre" to "Daniel"
+            )
+        )
     }
 
     private fun eliminarRegistro() {

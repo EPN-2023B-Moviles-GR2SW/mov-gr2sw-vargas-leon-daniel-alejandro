@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrain_crear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BibliotecaManager">
+
+    <TextView
+        android:id="@+id/tex_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva Biblioteca"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <EditText
+        android:id="@+id/in_Nombre_Biblioteca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tex_titulo" />
+
+    <Button
+        android:id="@+id/btn_crear_biblioteca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/in_Nombre_Biblioteca" />
+
+    <EditText
+        android:id="@+id/in_callaPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Calle Principal"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/in_Nombre_Biblioteca"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/in_Nombre_Biblioteca"
+        app:layout_constraintTop_toBottomOf="@+id/in_Nombre_Biblioteca" />
+
+    <EditText
+        android:id="@+id/in_calleSecundaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Calle Secundatia"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/in_callaPrincipal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/in_callaPrincipal"
+        app:layout_constraintTop_toBottomOf="@+id/in_callaPrincipal" />
+
+    <CheckBox
+        android:id="@+id/cb_disponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Dispobible"
+        app:layout_constraintEnd_toEndOf="@+id/in_calleSecundaria"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/in_calleSecundaria"
+        app:layout_constraintTop_toBottomOf="@+id/in_calleSecundaria" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

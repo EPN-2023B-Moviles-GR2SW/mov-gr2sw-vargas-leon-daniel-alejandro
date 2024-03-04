@@ -134,7 +134,7 @@ class GGoogleMapsActivity : AppCompatActivity() {
         val markQuicentro = andirMarcador(
             quicentro, titulo
         )
-        markQuicentro.tag = titulo
+        markQuicentro?.tag = titulo
         moverCamaraConZoom(quicentro, zoom)
     }
     fun anadirPoligono(){
